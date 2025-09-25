@@ -1,8 +1,8 @@
-# 📚 CoWork Hub - Reservation System
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=084298&size=35&center=true&vCenter=true&width=1000&lines=+CoWork+Hub+)](https://git.io/typing-svg)
 
-Sistema de reserva de salas de estudo desenvolvido com **Spring Boot**, **PostgreSQL**, **Thymeleaf** e **Docker**.
+Sistema de reserva de salas de estudo & trabalho desenvolvido com **Spring Boot**, **PostgreSQL**, **Thymeleaf** e **Docker**.
 
-## 👥 **Integrantes**
+## 🧑‍💻 **Integrantes**
 - **Gabriela Gomes Cezar RM556941**
 - **João Victor Rocha RM554727**
 
@@ -66,7 +66,7 @@ docker compose up --build
 - [ ] `docker compose up --build` executado
 - [ ] Login com GitHub funcionando
 
-## �️ **Tecnologias Utilizadas**
+## 🌐 **Tecnologias Utilizadas**
 
 - **Backend**: Spring Boot 3.x, Spring Security, JPA/Hibernate
 - **Frontend**: Thymeleaf, Bootstrap 5, JavaScript
