@@ -1,9 +1,9 @@
 services:
   db:
     image: postgres:16
-    container_name: studyrooms_db
+    container_name: coworkhub_db
     environment:
-      POSTGRES_DB: studyrooms
+      POSTGRES_DB: coworkhub
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
@@ -11,19 +11,19 @@ services:
     volumes:
       - dbdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d studyrooms"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d coworkhub"]
       interval: 5s
       timeout: 5s
       retries: 10
 
   app:
     build: .
-    container_name: studyrooms_app
+    container_name: coworkhub_app
     depends_on:
       db:
         condition: service_healthy
     environment:
-      DB_URL: jdbc:postgresql://db:5432/studyrooms
+      DB_URL: jdbc:postgresql://db:5432/coworkhub
       DB_USER: postgres
       DB_PASS: postgres
       GITHUB_ID: ${GITHUB_ID:-changeme}
